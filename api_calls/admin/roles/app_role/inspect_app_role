@@ -1,0 +1,4 @@
+#!/bin/bash
+
+curl --header "X-Vault-Token:root" --request GET \
+        http://127.0.0.1:8200/v1/auth/approle/role/app | jq

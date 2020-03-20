@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl --request POST --data @app_creds.json http://127.0.0.1:8200/v1/auth/approle/login | jq
